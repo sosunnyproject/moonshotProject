@@ -52,3 +52,9 @@ class JobsSpider(scrapy.Spider):
                 print "next", next
                 print "url", response.urljoin
                 yield scrapy.Request(url = next, callback=self.parse)
+
+"""
+getting pageNum
+num = l.split("=")
+pageNum = int(num[1])
+"""
