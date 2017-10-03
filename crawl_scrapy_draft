@@ -46,15 +46,10 @@ class JobsSpider(scrapy.Spider):
         #print "urljoin", response.urljoin
         links = response.css('div.paging > a::attr(href)').extract()
         for l in links:
-            #grab the string nums after '?page=' and convert to int, then put it in pageNum'
+            num = l.split("=")
+            pageNum = int(num[1])
             if pageNum < 12:
                 next = response.urljoin(l)
                 print "next", next
                 print "url", response.urljoin
                 yield scrapy.Request(url = next, callback=self.parse)
-
-"""
-getting pageNum
-num = l.split("=")
-pageNum = int(num[1])
-"""
