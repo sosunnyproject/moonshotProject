@@ -46,7 +46,8 @@ class JobsSpider(scrapy.Spider):
         #print "urljoin", response.urljoin
         links = response.css('div.paging > a::attr(href)').extract()
         for l in links:
-            if l[-1] < 12:
+            #grab the string nums after '?page=' and convert to int, then put it in pageNum'
+            if pageNum < 12:
                 next = response.urljoin(l)
                 print "next", next
                 print "url", response.urljoin
