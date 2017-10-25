@@ -1,0 +1,22 @@
+{
+  "name": "server_side_javascript",
+  "version": "1.0.0",
+  "description": "server side js tutorials",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "jsonfile": "^4.0.0",
+    "mysql": "^2.15.0",
+    "pug": "^2.0.0-rc.4",
+    "socket.io": "^2.0.3",
+    "underscore": "^1.8.3"
+  }
+}
