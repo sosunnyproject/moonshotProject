@@ -2,6 +2,9 @@
 # moonshotTeam Korean News Article Project
 Project from an educational program
 
+![Demo Image](/demophoto.png)
+
+
 Storing 'Moonshot' Team's codes here
 
 ## WebCrawling
